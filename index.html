@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Knowledgcity test for Aaron Aceves">
+    <meta name="author" content="Aaron Aceves">
+    <title>Aaron Aceves Knowledgecity Test | Home</title>
+    <link rel="canonical" href="https://www.adnhack.com/knowledgecity/index.html">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/css/index-min.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <div id="error_reporting" class="checkbox mb-3 text-left error_box">
+        Invalid or empty email or password
+      </div>
+      <label for="useremail" class="sr-only">Email address</label>
+      <input type="email" id="useremail" name="useremail" class="form-control" placeholder="Email address" autofocus>
+      <label for="userpassword" class="sr-only">Password</label>
+      <input type="password" id="userpassword" name="userpassword" class="form-control" placeholder="Password">
+      <div class="checkbox mb-3 text-left">
+        <label>
+          <input id="rememberuser" name=rememberuser type="checkbox" value="1"> Remember me
+        </label>
+      </div>
+      <button onclick="loginUser();" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+      <p class="mt-5 mb-3 text-muted"><small>Thanks for reviewing, I'll be waiting your feedback at <a class="links" href="mailto:aaron.aceves@gmail.com">aaron.aceves@gmail.com</a> Go to <a href="test.php">Test Page</a></small></p>
+    </form>
+    <!-- Custom JavaScript Section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app-min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        validateCredentials("userslist.html");
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Knowledgcity test for Aaron Aceves">
+    <meta name="author" content="Aaron Aceves">
+    <title>Aaron Aceves Knowledgecity Test | Results</title>
+    <link rel="canonical" href="https://www.adnhack.com/knowledgecity/userslist.html">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/css/index-min.css" rel="stylesheet">
+  </head>
+  <body class="text-center d-flex flex-column h-100">
+    <!-- Content -->
+    <h1 class="text-center">User List</h1>
+    <div class="full-width">
+      <table id="students-list">
+        <tr>
+          <th>Loading Results</th>
+        </tr>
+      </table>
+      <hr>
+      <div class="pagination">
+        <a id="prev" onclick="getUserList(0, 'prev');">&laquo;</a>
+        <a id="current" class="active">...</a>
+        <a id="next" onclick="getUserList(5, 'next');">&raquo;</a>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Thanks for reviewing, I'll be waiting your feedback at <a class="links" href="mailto:aaron.aceves@gmail.com">aaron.aceves@gmail.com</a> | <a class="links" onclick="logout()">Log Out</a> or <a class="links" href="/">Back Home</a></span>
+      </div>
+    </footer>
+    <!-- Custom JavaScript Section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/app-min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      getUserList(0, "initial");
+    });
+    </script>
+  </body>
+</html>
