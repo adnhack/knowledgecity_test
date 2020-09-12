@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `testdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `testdb` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `testdb`;
 -- MySQL dump 10.13  Distrib 8.0.21, for macos10.15 (x86_64)
 --
@@ -23,7 +23,6 @@ USE `testdb`;
 
 DROP TABLE IF EXISTS `api_users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `api_users` (
   `email` varchar(254) NOT NULL COMMENT 'Email is unique and is the user',
   `password` varchar(50) NOT NULL,
@@ -32,7 +31,7 @@ CREATE TABLE `api_users` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Created at time',
   PRIMARY KEY (`email`),
   KEY `toekn` (`token`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +50,6 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `students`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `students` (
   `uid` int NOT NULL AUTO_INCREMENT,
   `fname` varchar(45) DEFAULT NULL,
@@ -61,7 +59,7 @@ CREATE TABLE `students` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`uid`),
   KEY `searchable` (`fname`,`lname`,`usergroup`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
