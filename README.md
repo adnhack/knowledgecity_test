@@ -14,6 +14,9 @@ git clone https://github.com/adnhack/knowledgecity_test.git
 
 2. Review and Install the SQL (make sure you have create privilages). File is located on db/db.sql. Using mysql command line
 ```
+mysql -u root -p
+create database testdb;
+quit;
 mysql -u root -p testdb < db.sql
 ```
 
