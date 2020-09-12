@@ -1,4 +1,5 @@
 # Aaron Aceves - Simple Restful API
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 This system is a representation of a small Restful API for login and display students list
 
 ## Live demo
