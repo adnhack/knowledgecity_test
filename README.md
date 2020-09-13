@@ -3,7 +3,7 @@
 This system is a representation of a small Restful API for login and display students list
 
 ## Live demo
-Take a look at a functional live demo at [My Personal Website](http://www.knowledge.adnhack.com).
+Take a look at a functional live demo at [My Personal Website](http://knowledge.adnhack.com).
 
 ## Installation
 
@@ -31,7 +31,7 @@ $pass = '12345678'; //getenv('DB_PASSWORD');
 
 ## Usage
 
-1. Go to [Project Home](http://www.knowledge.adnhack.com) or use your own personal url
+1. Go to [Project Home](http://knowledge.adnhack.com) or use your own personal url
 2. Log with credentials
 ```
 email: aaron.aceves@gmail.com
